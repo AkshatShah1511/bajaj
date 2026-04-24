@@ -124,6 +124,6 @@ app.post('/bfhl', (req, res) => {
   catch (err) { console.error(err); res.status(500).json({ error: 'Internal server error' }); }
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log('BFHL server on port ' + PORT));
 module.exports = app;
